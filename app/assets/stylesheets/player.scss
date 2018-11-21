@@ -1,0 +1,23 @@
+// Place all the styles related to the player controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: #555;
+  color: white;
+  font: 100 13px/16px Helvetica, Arial, sans-serif;
+}
+a {
+  color: #8ebbc4;
+}
+.note {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.circle-audio-player {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+#playerContainer {
+  padding: 24px;
+}
