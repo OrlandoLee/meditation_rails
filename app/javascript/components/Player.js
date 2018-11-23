@@ -14,6 +14,12 @@ class Player extends React.Component {
 
 	  componentDidMount() {
 	    this.interval = setInterval(() => this.tick(), 1000);
+		var cap = new CircleAudioPlayer({
+			audio: 'http://www.html5tutorial.info/media/vincent.mp3',
+		  size: 120,
+		  borderWidth: 8
+		});
+		cap.appendTo(playerContainer);
 	  }
 
 	  componentWillUnmount() {
