@@ -15,7 +15,7 @@ class Player extends React.Component {
 	  componentDidMount() {
 	    this.interval = setInterval(() => this.tick(), 1000);
 		var cap = new CircleAudioPlayer({
-			audio: 'http://www.html5tutorial.info/media/vincent.mp3',
+			audio: this.props.source,
 		  size: 120,
 		  borderWidth: 8
 		});
@@ -39,6 +39,7 @@ class Player extends React.Component {
 }
 
 Player.propTypes = {
-  seconds: PropTypes.string
+  seconds: PropTypes.string,
+  source: PropTypes.string,
 };
 export default Player
